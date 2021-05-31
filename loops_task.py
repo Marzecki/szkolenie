@@ -11,7 +11,7 @@ while curr_time - start_time < 1:
 print(count)
 
 time1 = time.time()
-for iteration in range(count):
+for _ in range(count):
     time2 = time.time()
 
 print(time2 - time1)
