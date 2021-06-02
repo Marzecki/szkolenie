@@ -21,14 +21,16 @@ for iteration, line in enumerate(dict_strings):
 
 sum = 0
 for ticket in tickets:
-    for iteration, number in enumerate(ticket):
+    for number in ticket:
+        success = False
         for key in validation:
-            if iteration == key:
-                if not validation[key][1] <= int(number) <= validation[key][2] or not validation[key][3] <= int(number) <= validation[key][4]:
-                    print(int(number))
-                    sum += int(number)
-                    break
+            if  validation[key][0] <= int(number) <= validation[key][1] or validation[key][2] <= int(number) <= validation[key][3]:
+                success = True
+                break
+        if not success:
+            sum += int(number)
 
 
 print(validation)
+print(tickets)
 print(sum)

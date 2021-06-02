@@ -1,12 +1,13 @@
 [[source]]
 url = "https://pypi.org/simple"
-verify_ssl = true
+verify_ssl = false
 name = "pypi"
 
 [packages]
 autopep8 = "*"
 flake8 = "*"
 wemake-python-styleguide = "*"
+requests = "*"
 
 [dev-packages]
 
