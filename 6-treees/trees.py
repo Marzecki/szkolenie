@@ -1,15 +1,15 @@
-with open('input.txt', 'r') as file:
-    lines = file.readlines()
+with open('input.txt', 'r') as input_file:
+    lines = input_file.readlines()
 
 trees = [line.strip() for line in lines]
 
-x, y, sum = 0, 0, 0
+x_iter, y_iter, count = 0, 0, 0
 
-while y < len(trees):
-    if trees[y][x] == '#':
-        sum += 1
-    y += 1
-    x += 3
-    x = x % len(trees[0])
+while y_iter < len(trees):
+    if trees[y_iter][x_iter] == '#':
+        count += 1
+    y_iter += 1
+    x_iter += 3
+    x_iter = x_iter % len(trees[0])
 
-print(sum)
+print(count)
