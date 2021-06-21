@@ -24,3 +24,4 @@ read_input('input.txt')
 print(get_result(read_input('input.txt')))
 
 print('sourcetree test')
+print('sourcetree test2')
