@@ -1,6 +1,5 @@
 import pytest
 import requests
-from hamcrest import *
 
 
 @pytest.mark.parametrize('email, password, response', [('eve.holt@reqres.in', 'cityslicka', 200),
