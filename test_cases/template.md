@@ -31,7 +31,10 @@
 1. Activate pulse output 2
 2. Activate simulated volume
 3. Wait 3 minutes
+4. Get pulses count
 
 - Postconditions:
   - Reset exception recorder
   - Reset volume accus 
+
+**Expected result**: Number of pulses counted should increase
